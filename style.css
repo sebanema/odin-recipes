@@ -1,25 +1,45 @@
 /* style.css */
 
-#header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: ivory;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  
-.center {
-    text-align: center; /* to center text within the .center div */
+/* Reset default body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: ivory;
 }
 
-  ul.links {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: rgb(255, 169, 135);
-  }
+#header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 20px; /* Remove default margins */
+}
 
+.center {
+  display: block;
+  text-align: center;
+  margin: 0;
+  width: 100%; /* Takes up the full width of the viewport */
+}
+
+ul.links {
+  font-size: 36px;
+  font-weight: bold;
+  background-color: rgb(246, 200, 250);
+  padding: 16px 0; /* Remove left and right padding */
+  list-style-position: inside; /* Ensures that bullets are also centered */
+  margin-top: 50px; /* Remove default margins */
+}
 
 .link-color {
-    color: rgb(6, 168, 6)
+  color: rgb(2, 30, 2);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-  
-  
+
+.return-to-top {
+  font-size: 16px;
+  display: block;
+  color: #000; /* or any other color you prefer */
+  margin-top: 100px; /* to push the link down */
+  padding: 20px
+}
